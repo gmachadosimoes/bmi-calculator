@@ -1,0 +1,9 @@
+h1 {
+    text-align: center;
+}
+
+.pure-form {
+    padding-left: 100 px;
+    padding-right: 100px;
+    text-align: left;
+}
