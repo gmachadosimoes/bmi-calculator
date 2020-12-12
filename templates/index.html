@@ -7,27 +7,20 @@
     <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
     <title>BMI Calculator</title>
 </head>
-<body>
+<body class="main">
     <h1>BMI Calculator</h1>
-
-<body>
-
-<div>
+<div class="form">
     <form class="pure-form" method="POST" action="/">
-    <p>Please enter your weight in kgs:</p>
-    Weight:
-    <br>
+    Please enter your weight in kgs:<br>
     <input type="text" name="weight"><br>
-    <br>
-    <p>Now, enter your height in cm:</p>
-    <input type="text" name="height">
-    <br>
+    Now, enter your height in cm:<br>
+    <input type="text" name="height"><br>
     <button type="submit" class="pure-button pure-button-primary" value="submit">Submit</button>
     </form>
 </div>
 <br>
 <div>
-    {% if weight and height %}
+    {% if bmi %}
         <p>Your BMI is {{ bmi }}</p>
     {% endif %}
 </div>

@@ -7,3 +7,11 @@ h1 {
     padding-right: 100px;
     text-align: left;
 }
+
+.main {
+    display: flex;
+    align-items: center;
+    padding-left: 100 px;
+    padding-right: 100px;
+    text-align: left;
+}
